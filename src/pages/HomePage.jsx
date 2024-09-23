@@ -10,15 +10,15 @@ const HomePage = () => {
         <Navbar.Brand href="/" className="font-accent">Maima Islam</Navbar.Brand>
         <Nav className="flex-row">
           <Nav.Link href="/">About</Nav.Link>
-          <Nav.Link href="/Maima_Islam_Resume.pdf">Resume</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="/web/Maima_Islam_Resume.pdf">Resume</Nav.Link>
+          <Nav.Link href="mailto:maima_islam@brown.edu">Contact</Nav.Link>
         </Nav>
       </Navbar>
 
       <Row className="justify-content-center mt-5">
         <Col md={4} className="transition-1 text-center">
           <img 
-            src="/headshot.jpg" 
+            src="/web/headshot.jpg" 
             alt="Headshot" 
             className="my-4 mr-2"
             style={{ 
@@ -44,7 +44,7 @@ const HomePage = () => {
       </Row>
       <div className="text-center mt-3 transition-3">
         <p id="contact">
-          <img src="/brown.png" alt="Brown University" height="48"/>
+          <img src="/web/brown.png" alt="Brown University" height="48"/>
           <a className="link-color text-decoration-none" href="mailto:maima_islam@brown.edu">maima_islam@brown.edu</a>
           <span className="mx-2"> | </span>
           <a className="link-color text-decoration-none" href="http://linkedin.com/in/maimaislam" target="_blank" rel="noopener noreferrer">LinkedIn</a>
