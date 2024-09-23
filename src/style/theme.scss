@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$body-bg: #f5e6db;
+$body-color: #402323;
+$accent-color: #b85040;
+$link-color: #375a7d;
+// $theme-colors: (
+//   "primary": #007bff,
+//   "secondary": #6c757d,
+//   "success": #28a745,
+//   "info": #17a2b8,
+//   "warning": #ffc107,
+//   "danger": #dc3545,
+//   "light": #ECC8AF,
+//   "dark": #343a40
+// );
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: "Montserrat", system-ui !important;
+    background-color: $body-bg !important;
+    color: $body-color !important;
+}
+
+.font-accent {
+    font-family: "Work Sans", system-ui !important;
+    font-weight: 500 !important;
+    color: $accent-color !important;
+}
+
+.link-color {
+    color: $link-color !important;
+    &:hover {
+      color: $accent-color !important;
+    }
+}
+
+.nav-link {
+    color: $body-color !important;
+    padding-left: 1em !important;
+    &:hover {
+      color: $accent-color !important;
+    }
+}
+
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        transform: translate(-20px, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes fadeIn2 {
+    0%, 20% {
+        opacity: 0;
+        transform: translate(0px, 20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.transition-1 {
+    animation: fadeIn1 0.6s ease-in-out;
+}
+.transition-2 {
+    animation: fadeIn2 0.8s ease-in-out;
+}
+.transition-3 {
+    animation: fadeIn2 1.0s ease-in-out;
+}
